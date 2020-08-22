@@ -1,0 +1,10 @@
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\bin\Debug\netcoreapp2.2\Ejercicio9.deps.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\bin\Debug\netcoreapp2.2\Ejercicio9.runtimeconfig.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\bin\Debug\netcoreapp2.2\Ejercicio9.runtimeconfig.dev.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\bin\Debug\netcoreapp2.2\Ejercicio9.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\bin\Debug\netcoreapp2.2\Ejercicio9.pdb
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\obj\Debug\netcoreapp2.2\Ejercicio9.csproj.CoreCompileInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\obj\Debug\netcoreapp2.2\Ejercicio9.AssemblyInfoInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\obj\Debug\netcoreapp2.2\Ejercicio9.AssemblyInfo.cs
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\obj\Debug\netcoreapp2.2\Ejercicio9.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio9\obj\Debug\netcoreapp2.2\Ejercicio9.pdb
