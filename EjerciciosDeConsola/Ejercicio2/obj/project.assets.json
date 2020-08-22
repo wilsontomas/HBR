@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\F2F\\Desktop\\proyecto\\HBR\\EjerciciosDeConsola\\Ejercicio1\\Ejercicio2\\Ejercicio2.csproj",
+      "projectUniqueName": "C:\\Users\\F2F\\Desktop\\proyecto\\HBR\\EjerciciosDeConsola\\Ejercicio2\\Ejercicio2.csproj",
       "projectName": "Ejercicio2",
-      "projectPath": "C:\\Users\\F2F\\Desktop\\proyecto\\HBR\\EjerciciosDeConsola\\Ejercicio1\\Ejercicio2\\Ejercicio2.csproj",
+      "projectPath": "C:\\Users\\F2F\\Desktop\\proyecto\\HBR\\EjerciciosDeConsola\\Ejercicio2\\Ejercicio2.csproj",
       "packagesPath": "C:\\Users\\F2F\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\F2F\\Desktop\\proyecto\\HBR\\EjerciciosDeConsola\\Ejercicio1\\Ejercicio2\\obj\\",
+      "outputPath": "C:\\Users\\F2F\\Desktop\\proyecto\\HBR\\EjerciciosDeConsola\\Ejercicio2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

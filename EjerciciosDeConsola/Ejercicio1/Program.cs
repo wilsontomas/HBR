@@ -6,7 +6,7 @@ namespace Ejercicio1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
             bool exit = true;
             int number = 0;
             int result, resto;
