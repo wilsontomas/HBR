@@ -1,0 +1,11 @@
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\obj\Debug\netcoreapp2.2\Ejercicio19.csprojAssemblyReference.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\obj\Debug\netcoreapp2.2\Ejercicio19.csproj.CoreCompileInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\obj\Debug\netcoreapp2.2\Ejercicio19.AssemblyInfoInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\obj\Debug\netcoreapp2.2\Ejercicio19.AssemblyInfo.cs
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\bin\Debug\netcoreapp2.2\Ejercicio19.deps.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\bin\Debug\netcoreapp2.2\Ejercicio19.runtimeconfig.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\bin\Debug\netcoreapp2.2\Ejercicio19.runtimeconfig.dev.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\bin\Debug\netcoreapp2.2\Ejercicio19.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\bin\Debug\netcoreapp2.2\Ejercicio19.pdb
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\obj\Debug\netcoreapp2.2\Ejercicio19.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio19\obj\Debug\netcoreapp2.2\Ejercicio19.pdb
