@@ -8,3 +8,4 @@ C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio24\obj\Debug\netc
 C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio24\obj\Debug\netcoreapp2.2\Ejercicio24.AssemblyInfo.cs
 C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio24\obj\Debug\netcoreapp2.2\Ejercicio24.dll
 C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio24\obj\Debug\netcoreapp2.2\Ejercicio24.pdb
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio24\obj\Debug\netcoreapp2.2\Ejercicio24.csprojAssemblyReference.cache
