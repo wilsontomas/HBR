@@ -1,0 +1,14 @@
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\bin\Debug\netcoreapp2.2\EjerciciosWeb.deps.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\bin\Debug\netcoreapp2.2\EjerciciosWeb.runtimeconfig.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\bin\Debug\netcoreapp2.2\EjerciciosWeb.runtimeconfig.dev.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\bin\Debug\netcoreapp2.2\EjerciciosWeb.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\bin\Debug\netcoreapp2.2\EjerciciosWeb.pdb
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.csprojAssemblyReference.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.csproj.CoreCompileInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.RazorAssemblyInfo.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.RazorAssemblyInfo.cs
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.AssemblyInfoInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.AssemblyInfo.cs
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.RazorTargetAssemblyInfo.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosWeb\EjerciciosWeb\obj\Debug\netcoreapp2.2\EjerciciosWeb.pdb
