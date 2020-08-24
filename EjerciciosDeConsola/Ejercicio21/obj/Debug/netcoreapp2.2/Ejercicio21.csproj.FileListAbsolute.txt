@@ -1,0 +1,11 @@
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\bin\Debug\netcoreapp2.2\Ejercicio21.deps.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\bin\Debug\netcoreapp2.2\Ejercicio21.runtimeconfig.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\bin\Debug\netcoreapp2.2\Ejercicio21.runtimeconfig.dev.json
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\bin\Debug\netcoreapp2.2\Ejercicio21.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\bin\Debug\netcoreapp2.2\Ejercicio21.pdb
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\obj\Debug\netcoreapp2.2\Ejercicio21.csprojAssemblyReference.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\obj\Debug\netcoreapp2.2\Ejercicio21.csproj.CoreCompileInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\obj\Debug\netcoreapp2.2\Ejercicio21.AssemblyInfoInputs.cache
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\obj\Debug\netcoreapp2.2\Ejercicio21.AssemblyInfo.cs
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\obj\Debug\netcoreapp2.2\Ejercicio21.dll
+C:\Users\F2F\Desktop\proyecto\HBR\EjerciciosDeConsola\Ejercicio21\obj\Debug\netcoreapp2.2\Ejercicio21.pdb
