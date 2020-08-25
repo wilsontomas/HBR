@@ -8,8 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+
+using System.Xml;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace EjerciciosWeb
 {
@@ -26,8 +27,15 @@ namespace EjerciciosWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddCors(Options=>Options.AddPolicy("MyCors", Builder=>Builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
+            services.AddCors(Options=>Options.AddPolicy("MyCors",
+                Builder=>Builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                ));
+            services.AddMvc().AddXmlSerializerFormatters();
            
+            // services.AddControllers().AddXmlSerializerFormatters();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

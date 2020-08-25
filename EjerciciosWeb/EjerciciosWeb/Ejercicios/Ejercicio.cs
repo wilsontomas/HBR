@@ -78,7 +78,7 @@ namespace EjerciciosWeb.Ejercicios
 
         public string Practica7(int numero)
         {
-            if(numero < 0) { numero = Math.Abs(numero)}
+            if(numero < 0) { numero = Math.Abs(numero); }
             return $"El valor absoluto es: {numero}";
         }
           
