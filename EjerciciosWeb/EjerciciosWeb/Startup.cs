@@ -27,7 +27,7 @@ namespace EjerciciosWeb
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddCors(Options=>Options.AddPolicy("MyCors", Builder=>Builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
-            
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

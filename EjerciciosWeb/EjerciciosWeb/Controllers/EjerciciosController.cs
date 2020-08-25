@@ -13,13 +13,49 @@ namespace EjerciciosWeb.Controllers
     [Route("api/Ejercicios")]
     public class EjerciciosController : Controller
     {
+        private Ejercicio metodo = new Ejercicio();
         [HttpGet("Ejercicio1")]
         public string Practica1(int numero1, int numero2)
         {           
-            var metodo = new Ejercicio1();
-            return metodo.PrimerEjercicio(numero1, numero2);
+           
+            return metodo.Practica1(numero1, numero2);
+        }
+        [HttpGet("Ejercicio2")]
+        public string Practica2(int numero1, int numero2)
+        {
+            return metodo.Practica2(numero1,numero2);
+        }
+        [HttpGet("Ejercicio3")]
+        public string Practica3(int numero1, int numero2)
+        {
+            return metodo.Practica3(numero1, numero2);
+        }
+        [HttpGet("Ejercicio4")]
+        public string Practica4(int numero1,int numero2)
+        {
+            return metodo.Practica4(numero1, numero2);
+           
         }
 
+        [HttpGet("Ejercicio5")]
+        public string Practica5(string letra)
+        {
+            return metodo.Practica5(letra);
+
+        }
+
+        [HttpGet("Ejercicio6")]
+        public string Practica6(int numero1, int numero2)
+        {
+            return metodo.Practica6(numero1, numero2);
+
+        }
+        [HttpGet("Ejercicio7")]
+        public string Practic76(int numero)
+        {
+            return metodo.Practica7(numero);
+
+        }
         // GET: api/<controller>
         [HttpGet]
         public IEnumerable<string> Get()
@@ -27,29 +63,5 @@ namespace EjerciciosWeb.Controllers
             return new string[] { "wilson", "tomas" };
         }
 
-        // GET api/<controller>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<controller>
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
