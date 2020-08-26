@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EjerciciosWebXML.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -204,6 +205,66 @@ namespace EjerciciosWeb.Ejercicios
             Array.Sort(arreglo);
 
             return arreglo;
+        }
+
+        public string[] Practica18()
+        {       string[] paises = new string[5] {"Dominicana","peru","Argentina","Mexico","Brasil" };
+                int[] habitantes = new int[5] {10000000,2500000,3000000,4000000,5000000 };
+                string[] respuesta=new string[2];
+            string p = "";
+            string h = "";
+                Array.Sort(paises, habitantes);
+            foreach (var item in paises)
+            {
+                p += item + " ";
+            }
+            foreach (var item in habitantes)
+            {
+                h += item + " ";
+            }
+            respuesta[0] =$"Pais: {p}, habitantes: {h}";      
+                Array.Sort(habitantes, paises);
+                Array.Reverse(habitantes);
+                Array.Reverse(paises);
+            p = ""; h = "";
+            foreach (var item in paises)
+            {
+                p += item + " ";
+            }
+            foreach (var item in habitantes)
+            {
+                h += item + " ";
+            }
+            respuesta[1]=$"Habitantes: {h}, Pais: {p}";               
+                return respuesta;
+        }
+
+
+        public string[] Practica19()
+        {
+            //string f1 = ""; string f2 = "";
+            string[] respuesta = new string[2];
+            string[][] arreglo = new string[2][];
+            arreglo[0] = new string[5];
+            arreglo[1] = new string[5];
+            for (int x = 0; x < 2; x++)
+            {
+               
+                for (int y = 0; y < 5; y++)
+                {
+                    arreglo[x][y] = ""+y;
+                }
+            }
+            respuesta[0] = ""+ arreglo[0];
+            respuesta[1] = ""+arreglo[1];
+            return respuesta;
+        }
+
+        public string Practica20(List<Paises> paises)
+        {
+            string p = "";
+
+            return "";
         }
     }
 }

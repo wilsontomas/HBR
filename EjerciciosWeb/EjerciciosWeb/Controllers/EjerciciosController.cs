@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EjerciciosWeb.Ejercicios;
 using Microsoft.AspNetCore.Cors;
+using EjerciciosWebXML.Models;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace EjerciciosWeb.Controllers
@@ -18,47 +19,47 @@ namespace EjerciciosWeb.Controllers
         private Ejercicio metodo = new Ejercicio();
 
         [Produces("application/xml")]
-        [HttpGet("Ejercicio1/{numero1}/{numero2}")]
+        [HttpGet("Ejercicio1")]
         public object Practica1(int numero1, int numero2)
         {
            
             return metodo.Practica1(numero1, numero2);
         }
         [Produces("application/xml")]
-        [HttpGet("Ejercicio2/{numero1}/{numero2}")]
+        [HttpGet("Ejercicio2")]
         public object Practica2(int numero1, int numero2)
         {
             return metodo.Practica2(numero1,numero2);
         }
         [Produces("application/xml")]
-        [HttpGet("Ejercicio3/{numero1}/{numero2}")]
+        [HttpGet("Ejercicio3")]
         public object Practica3(int numero1, int numero2)
         {
             return metodo.Practica3(numero1, numero2);
         }
         [Produces("application/xml")]
-        [HttpGet("Ejercicio4/{numero1}/{numero2}")]
+        [HttpGet("Ejercicio4")]
         public object Practica4(int numero1,int numero2)
         {
             return metodo.Practica4(numero1, numero2);
            
         }
         [Produces("application/xml")]
-        [HttpGet("Ejercicio5/{letra}")]
+        [HttpGet("Ejercicio5")]
         public object Practica5(string letra)
         {
             return metodo.Practica5(letra);
 
         }
         [Produces("application/xml")]
-        [HttpGet("Ejercicio6/{numero1}/{numero2}")]
+        [HttpGet("Ejercicio6")]
         public object Practica6(int numero1, int numero2)
         {
             return metodo.Practica6(numero1, numero2);
 
         }
         [Produces("application/xml")]
-        [HttpGet("Ejercicio7/{numero}")]
+        [HttpGet("Ejercicio7")]
         public object Practic7(int numero)
         {
             return metodo.Practica7(numero);
@@ -115,7 +116,7 @@ namespace EjerciciosWeb.Controllers
         }
 
         [Produces("application/json")]
-        [HttpGet("Ejercicio15/{arreglo}")]
+        [HttpGet("Ejercicio15")]
         public object Practic15(int[] arreglo)
         {
             return metodo.Practica15(arreglo);
@@ -135,6 +136,28 @@ namespace EjerciciosWeb.Controllers
         {
             return metodo.Practica17();
 
+        }
+
+        [Produces("application/json")]
+        [HttpGet("Ejercicio18")]
+        public object Practic18()
+        {
+            return metodo.Practica18();
+
+        }
+        [Produces("application/json")]
+        [HttpGet("Ejercicio19")]
+        public object Practic19()
+        {
+            return metodo.Practica19();
+
+        }
+        [Produces("application/json")]
+        [HttpPost("Ejercicio20")]
+        public object Practic20(List<Paises> Paises)
+        {
+           // return metodo.Practica20(paises);
+            return "hola mundo";
         }
         // GET: api/<controller>
         [Produces("application/xml")]
