@@ -64,6 +64,78 @@ namespace EjerciciosWeb.Controllers
             return metodo.Practica7(numero);
 
         }
+        [Produces("application/xml")]
+        [HttpGet("Ejercicio8")]
+        public object Practic8()
+        {
+            return metodo.Practica8();
+
+        }
+        [Produces("application/xml")]
+        [HttpGet("Ejercicio9")]
+        public object Practic9()
+        {
+            return metodo.Practica9();
+
+        }
+        [Produces("application/xml")]
+        [HttpGet("Ejercicio10")]
+        public object Practic10()
+        {
+            return metodo.Practica10();
+
+        }
+        [Produces("application/xml")]
+        [HttpGet("Ejercicio11")]
+        public object Practic11()
+        {
+            return metodo.Practica11();
+
+        }
+        [Produces("application/xml")]
+        [HttpGet("Ejercicio12")]
+        public object Practic12()
+        {
+            return metodo.Practica12();
+
+        }
+        [Produces("application/json")]
+        [HttpGet("Ejercicio13")]
+        public object Practic13()
+        {
+            return metodo.Practica13();
+
+        }
+        [Produces("application/json")]
+        [HttpGet("Ejercicio14")]
+        public object Practic14()
+        {
+            return metodo.Practica14();
+
+        }
+
+        [Produces("application/json")]
+        [HttpGet("Ejercicio15/{arreglo}")]
+        public object Practic15(int[] arreglo)
+        {
+            return metodo.Practica15(arreglo);
+
+        }
+
+        [Produces("application/json")]
+        [HttpGet("Ejercicio16")]
+        public object Practic16()
+        {
+            return metodo.Practica16();
+
+        }
+        [Produces("application/json")]
+        [HttpGet("Ejercicio17")]
+        public object Practic17()
+        {
+            return metodo.Practica17();
+
+        }
         // GET: api/<controller>
         [Produces("application/xml")]
         [HttpGet]
