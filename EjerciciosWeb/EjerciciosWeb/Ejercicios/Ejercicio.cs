@@ -1,4 +1,4 @@
-﻿using EjerciciosWebXML.Models;
+﻿using EjerciciosWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -262,9 +262,99 @@ namespace EjerciciosWeb.Ejercicios
 
         public string Practica20(List<Paises> paises)
         {
-            string p = "";
+           
+                    
+            if (paises.Count > 0)
+            {       int tempMayor = (paises[0].Temp1 + paises[0].Temp2 + paises[0].Temp3) / 3;
+                    string p = "";
+                    string nombreTempMayor = "";
+                  
+                    foreach (var item in paises)
+                    {
+                        int media = (item.Temp1 + item.Temp2 + item.Temp3) / 3;                       
+                        p += "Nombre: "+item.Nombre + " Temp1: " + item.Temp1 + " Temp2: " + item.Temp2 + " Temp3: " + item.Temp3 + " Temp media: " + media+", ";
+                    if (media >= tempMayor ) { tempMayor = media; nombreTempMayor = item.Nombre; }
+                    }
+                p += "La provinsia con temperatura mayor es: " + nombreTempMayor;
+                    return p;
+            }
+            else
+            {
+                    return "No se recibio nada.";
+            }
+       
+        }
 
-            return "";
+        public string Practica21()
+        {
+            string[][] matris = new string[5][];
+       
+            matris = new string[5][];
+
+            for (int i = 0; i< 5; i++)
+            {
+                matris[i] = new string[i + 1];
+            }
+            //----------------------------
+
+            int cont = 1;
+            for (int i = 0; i < 5; i++)
+            {
+                //Console.WriteLine($"Fila numero: {i + 1} ");
+                for (int x = 0; x < cont; x++)
+                {
+
+                    matris[i][x] = "" + x + 1;
+                }
+                cont++;
+            }
+
+            int cont2 = 1;
+            string p = "";
+            for (int i = 0; i < 5; i++)
+            {
+
+                for (int x = 0; x < cont2; x++)
+                {
+                    
+                    p += " " + matris[i][x] + ", ";
+                }
+               
+                cont2++;
+            }
+            return p;
+        }
+
+
+        public string Practica22(List<Empleado> Listaempleados)
+        {
+            if(Listaempleados.Count==3)
+            {
+                string mensaje = "";
+            string[] empleados = new string[3];
+            string[][] Dias = new string[3][];
+            int Faltas = Listaempleados[0].Inasistencias;
+            string nombre = "";
+            for (int i = 0; i < Listaempleados.Count; i++)
+            {                   
+                     empleados[i] = Listaempleados[i].Nombre;                   
+                     var valor = Listaempleados[i].Inasistencias;
+                     Dias[i] = new string[valor];
+            }      
+            for (int x = 0; x < Listaempleados.Count; x++)
+            {
+                    mensaje += $" {empleados[x]} ha faltado {Dias[x].Length} dias, ";
+                if (Dias[x].Length < Faltas) { Faltas = Dias[x].Length; nombre = empleados[x]; }
+            }
+                mensaje += $"El empleado con menos faltas es: {nombre}";
+                return mensaje;
+            }
+            else
+            {
+                return "Se deben enviar 3 empleados.";
+            }
+            
+           
         }
     }
 }

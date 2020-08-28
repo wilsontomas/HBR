@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EjerciciosWeb.Ejercicios;
 using Microsoft.AspNetCore.Cors;
-using EjerciciosWebXML.Models;
+
+using EjerciciosWeb.Models;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace EjerciciosWeb.Controllers
@@ -154,11 +155,40 @@ namespace EjerciciosWeb.Controllers
         }
         [Produces("application/json")]
         [HttpPost("Ejercicio20")]
-        public object Practic20(List<Paises> Paises)
+        public object Practic20([FromBody] List<Paises> paises)
         {
-           // return metodo.Practica20(paises);
-            return "hola mundo";
+           return metodo.Practica20(paises);
+            //return "hola mundo";
         }
+
+        [Produces("application/json")]
+        [HttpGet("Ejercicio21")]
+        public object Practic21()
+        {
+            return metodo.Practica21();
+            //return "hola mundo";
+        }
+
+       
+       
+
+        [Produces("application/json")]
+        [HttpPost("Ejercicio22")]
+        public object Practic22( [FromBody] List<Empleado> empleados)
+        {
+            return metodo.Practica22(empleados);          
+        }
+
+
+
+
+
+
+
+
+
+
+
         // GET: api/<controller>
         [Produces("application/xml")]
         [HttpGet]

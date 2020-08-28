@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace EjerciciosWeb.Models
 {
-    public class Paises
+    public class Empleado
     {
         public string Nombre { get; set; }
-        public int Temp1 { get; set; }
-        public int Temp2 { get; set; }
-        public int Temp3 { get; set; }
+
+        public int Inasistencias { get; set; }
     }
 }
