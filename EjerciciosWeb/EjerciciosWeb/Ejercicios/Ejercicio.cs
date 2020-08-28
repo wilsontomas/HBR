@@ -356,5 +356,81 @@ namespace EjerciciosWeb.Ejercicios
             
            
         }
+
+        public string Practica23()
+        {
+            string mensaje = "";
+            string[][] arreglo = new string[2][];            
+            arreglo[0] = new string[2];
+            arreglo[1] = new string[2];
+            int contador = 0;
+            for (int i = 0; i < 2; i++)
+            {   
+                for (int x = 0; x < 2; x++)
+                {
+                   arreglo[i][x] = contador.ToString();
+                    contador++;
+                }
+            }
+            
+            mensaje += "Arreglo normal =";
+            for (int i = 0; i < 2; i++)
+            {
+                for (int x = 0; x < 2; x++)
+                {         
+                    mensaje +=" "+arreglo[i][x]+",";
+                }            
+            }
+            //intercambio
+            var anterior = arreglo[1];
+            arreglo[1] = arreglo[0];
+            arreglo[0] = anterior;
+            mensaje += " arreglo invertido =";
+            for (int i = 0; i < 2; i++)
+            {
+                for (int x = 0; x < 2; x++)
+                {
+                    mensaje += " " + arreglo[i][x] + ",";
+                }              
+            }
+
+
+            return mensaje;
+        }
+
+        public string Practica24()
+        {
+            string mensaje = "";
+            string[][] arreglo = new string[3][];
+            arreglo[0] = new string[3];
+            arreglo[1] = new string[3];
+            arreglo[2] = new string[3];
+            int contador = 0;
+            for (int i = 0; i < 3; i++)
+            {              
+                for (int x = 0; x < 3; x++)
+                {                  
+                    arreglo[i][x] = contador.ToString();
+                    contador++;
+                }
+            }
+            mensaje += "Arreglo= ";
+            for (int i = 0; i < 3; i++)
+            {
+                for (int x = 0; x < 3; x++)
+                {
+                    mensaje += arreglo[i][x] + " ";
+                }            
+            }
+            mensaje += "Vertices= ";
+            for (int i = 0; i < 3; i += 2)
+            {
+                for (int x = 0; x < 3; x += 2)
+                {
+                    mensaje += arreglo[i][x] + ",";
+                }  
+            }
+            return mensaje;
+        }
     }
 }

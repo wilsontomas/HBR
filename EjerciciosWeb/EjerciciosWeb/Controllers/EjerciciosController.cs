@@ -169,14 +169,26 @@ namespace EjerciciosWeb.Controllers
             //return "hola mundo";
         }
 
-       
-       
-
         [Produces("application/json")]
         [HttpPost("Ejercicio22")]
         public object Practic22( [FromBody] List<Empleado> empleados)
         {
             return metodo.Practica22(empleados);          
+        }
+
+
+        [Produces("application/json")]
+        [HttpGet("Ejercicio23")]
+        public object Practic23()
+        {
+            return metodo.Practica23();
+        }
+
+        [Produces("application/json")]
+        [HttpGet("Ejercicio24")]
+        public object Practic24()
+        {
+            return metodo.Practica24();
         }
 
 
