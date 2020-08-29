@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Registrarse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Registrarse</h2>
+
+@using (Html.BeginForm("Registrarse", "Usuario", FormMethod.Post))
+{
+
+    <div class="form-group">
+        <label>Ingresa tu nombre de ususario</label>
+        <input type="text" class="form-control" value="" name="NombreUsuario" />
+    </div>
+    <div class="form-group">
+        <label>Ingresa tu nombre</label>
+        <input type="text" class="form-control" value="" name="Nombre" />
+    </div>
+    <div class="form-group">
+        <label>Ingresa tu Apellido</label>
+        <input type="text" class="form-control" value="" name="Apellido" />
+    </div>
+    <div class="form-group">
+        <label>Ingresa tu clave</label>
+        <input type="password" class="form-control" value="" name="Clave" />
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+
+}
