@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PracticaWeb.Clases;
+using PracticaWeb.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +11,7 @@ namespace PracticaWeb.Controllers
 {
     public class UsuarioController : Controller
     {
+        private MetodosUsuario metodos = new MetodosUsuario();
         // GET: Usuario
         public ActionResult Login(string mensaje="")
         {
@@ -18,13 +21,11 @@ namespace PracticaWeb.Controllers
         [HttpPost]
         public ActionResult IniciarSesion(string NombreUsuario, string Clave)
         {
-           
-            string user = "wilson"; string pass = "123";
-
+        
             if(!String.IsNullOrEmpty(NombreUsuario) || !String.IsNullOrEmpty(Clave))
             {
               
-                if(NombreUsuario==user && Clave == pass)
+                if(metodos.ValidarUsuario(NombreUsuario,Clave))
                 {
                     FormsAuthentication.SetAuthCookie(NombreUsuario,true);
                     return RedirectToAction("Perfil");
@@ -44,18 +45,63 @@ namespace PracticaWeb.Controllers
            // return Login();
         }
 
-        public ActionResult Registrarse()
+        public ActionResult Registrarse(string mensaje="")
         {
+            ViewBag.Mensaje = mensaje;
             return View();
         }
-        public ActionResult Perfil()
+        [HttpPost]
+        public ActionResult Registrarse(Usuario usuario)
         {
-            return View();
+            if (usuario ==null)
+            {
+                return RedirectToAction("Registrarse", "Usuario", new { mensaje = "Los datos estan vacios." });
+            }
+            else
+            {
+                if (!metodos.VerificarUsuario(usuario.NombreUsuario))
+                {
+                    //return RedirectToAction("Registrarse", "Usuario", new { mensaje = "Se puede logear" });
+                    if (metodos.RegistrarUsuario(usuario))
+                    {
+                        FormsAuthentication.SetAuthCookie(usuario.NombreUsuario, true);
+                        return RedirectToAction("Perfil");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Registrarse", "Usuario", new { mensaje = "Ha ocurrido un error al insertar" });
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("Registrarse", "Usuario", new { mensaje = "El usuario ya existe." });
+                }
+            }
+           
+        }
+        public ActionResult Perfil(string mensaje="")
+        {
+            ViewBag.Mensaje = mensaje;
+            //System.Web.HttpContext.Current.User.Identity.Name;
+            var DatoUsuario = metodos.ObtenerUsuario(User.Identity.Name);
+
+            return View(DatoUsuario);
         }
 
-        public ActionResult EditarPerfil()
+        [HttpPost]
+        public ActionResult EditarPerfil(int Id, string Nombre, string Apellido)
         {
-            return RedirectToAction("Perfil");
+            if (!String.IsNullOrEmpty(Nombre) || !String.IsNullOrEmpty(Apellido))
+            {
+                metodos.EditarPerfil(Id, Nombre, Apellido);                
+                return RedirectToAction("Perfil");               
+            }
+            else
+            {
+                return RedirectToAction("Perfil", "Usuario", new { mensaje = "Los campos deben estar llenos." });
+              
+            }
+           
         }
         [Authorize]
         public ActionResult Cerrar()

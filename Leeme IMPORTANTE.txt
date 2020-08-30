@@ -1,0 +1,1 @@
+Se ignoro la carpeta "packages" del proyecto web para disminuir el peso

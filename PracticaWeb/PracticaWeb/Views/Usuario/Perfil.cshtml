@@ -1,7 +1,27 @@
 ﻿
+@model PracticaWeb.Models.Usuario
 @{
     ViewBag.Title = "Perfil";
 }
+ @if(!string.IsNullOrEmpty(ViewBag.mensaje))
+    {
+        <div class="alert alert-danger">
+            @ViewBag.mensaje
+        </div>
+    }
 
 <h2>Perfil</h2>
-
+<h4>Nombre de Cuenta: @Model.NombreUsuario</h4>
+@using (Html.BeginForm("EditarPerfil", "Usuario", FormMethod.Post))
+{
+    <input type="number" hidden value="@Model.Id" name="Id" />
+    <div class="form-group">
+        <label>Primer nombre</label>
+        <input type="text" class="form-control" value="@Model.Nombre" name="Nombre" />
+    </div>
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" value="@Model.Apellido" name="Apellido" />
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+}

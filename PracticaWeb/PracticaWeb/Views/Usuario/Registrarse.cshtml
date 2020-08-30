@@ -3,7 +3,12 @@
     ViewBag.Title = "Registrarse";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+ @if(!string.IsNullOrEmpty(ViewBag.mensaje))
+    {
+        <div class="alert alert-danger">
+            @ViewBag.mensaje
+        </div>
+    }
 <h2>Registrarse</h2>
 
 @using (Html.BeginForm("Registrarse", "Usuario", FormMethod.Post))
