@@ -136,7 +136,9 @@
     </Compile>
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\ProductoCategoria.cs" />
     <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\VMProductoCategorias.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

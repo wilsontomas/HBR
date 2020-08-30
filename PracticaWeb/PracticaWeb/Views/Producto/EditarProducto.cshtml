@@ -1,8 +1,32 @@
-﻿
+﻿@model PracticaWeb.Models.VMProductoCategorias
+
 @{
     ViewBag.Title = "EditarProducto";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>EditarProducto</h2>
 
+
+<h2>Editar Producto</h2>
+
+@using (Html.BeginForm("EditarProductoAccion", "Producto", FormMethod.Post))
+{
+    <div class="input-group">
+        <input name="Id" hidden value="@Model.producto.Id" />
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" required class="form-control" value="@Model.producto.Nombre" name="Nombre" />
+        </div>
+        <div class="form-group">
+            <label>Categoria</label>
+            <select class="form-control" required name="IdCategoria">
+                @foreach (var item in Model.categorias)
+                {
+                    <option value="@item.Id">@item.NombreCategoria</option>
+                }
+            </select>
+        </div>
+        <br />
+        <button class="btn btn-primary" type="submit">Crear</button>
+    </div>
+}

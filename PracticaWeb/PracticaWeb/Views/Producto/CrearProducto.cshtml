@@ -1,8 +1,34 @@
-﻿
+﻿@model List<PracticaWeb.Models.Categoria>
 @{
     ViewBag.Title = "CrearProducto";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@if(!string.IsNullOrEmpty(ViewBag.mensaje))
+    {
+        <div class="alert alert-danger">
+            @ViewBag.mensaje
+        </div>
+    }
+<h2>Crear Producto</h2>
 
-<h2>CrearProducto</h2>
+@using (Html.BeginForm("CrearProductoAccion", "Producto", FormMethod.Post))
+{
+    <div class="input-group">
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" required class="form-control" name="Nombre" />
+        </div>
+        <div class="form-group">
+            <label>Categoria</label>
+            <select class="form-control" required name="IdCategoria">
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Id">@item.NombreCategoria</option>
+                }
+            </select>
+        </div>
+
+        <button class="btn btn-primary" type="submit" >Crear</button>
+    </div>
+}
 
