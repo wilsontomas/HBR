@@ -1,0 +1,23 @@
+﻿@model List<PracticaWeb.Models.Producto>
+@{
+    ViewBag.Title = "FiltroCategoria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Filtro por Categoria</h2>
+<h4>@Html.ActionLink("Volver","ListarProducto","Producto")</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>

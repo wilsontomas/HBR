@@ -138,6 +138,7 @@
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\ProductoCategoria.cs" />
     <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\VMProductoCategoria2.cs" />
     <Compile Include="Models\VMProductoCategorias.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -186,6 +187,7 @@
     <Content Include="Views\Producto\ListarProducto.cshtml" />
     <Content Include="Views\Producto\EditarProducto.cshtml" />
     <Content Include="Views\Usuario\Registrarse.cshtml" />
+    <Content Include="Views\Categoria\FiltroCategoria.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

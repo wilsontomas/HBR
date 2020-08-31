@@ -1,8 +1,43 @@
-﻿
+﻿@model List<PracticaWeb.Models.Categoria>
 @{
     ViewBag.Title = "ListarCategoria";
      Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ListarCategoria</h2>
+<h2>Listar Categorias</h2>
+<br />
+<h3>@Html.ActionLink("Crear Categoria", "CrearCategoria")</h3>
+<table class="table " >
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            
+            <th>Accion1</th>
+            <th>Accion2</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreCategoria</td>
+               
+                <td>
+                    @using (Html.BeginForm("EditarCategoria", "Categoria"))
+                    {
+                        <button type="submit" class="btn btn-success" name="IdCategoria" value="@item.Id">Editar</button>
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm("EliminarCategoria", "Categoria"))
+                    {
+                        <button type="submit" class="btn btn-danger" name="IdCategoria" value="@item.Id">Eliminar</button>
+                    }
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
 

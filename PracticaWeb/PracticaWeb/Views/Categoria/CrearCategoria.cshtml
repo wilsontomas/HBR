@@ -4,5 +4,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>CrearCategoria</h2>
+<h2>Crear Categoria</h2>
+<h3>@Html.ActionLink("Volver", "ListarCategoria")</h3>
 
+@using (Html.BeginForm("CrearCategoriaAccion", "Categoria", FormMethod.Post))
+{
+    <div class="form-group">
+        <label>Nombre de la categoria</label>
+        <input type="text" class="form-control" required name="NombreCategoria" />
+
+    </div>
+    <br />
+    <button class="btn btn-primary" type="submit">Crear</button>
+}

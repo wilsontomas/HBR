@@ -1,4 +1,4 @@
-﻿
+﻿@model PracticaWeb.Models.Categoria
 @{
     ViewBag.Title = "EditarCategoria";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,3 +6,13 @@
 
 <h2>EditarCategoria</h2>
 
+@using (Html.BeginForm("EditarCategoriaAccion","Categoria"))
+{
+    <input name="Id" type="number" value="@Model.Id" hidden />
+    <div class="form-group">
+        <label>Nombre de la nueva categoria</label>
+        <input type="text" required class="form-control" value="@Model.NombreCategoria" name="nombre" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Crear</button>
+}

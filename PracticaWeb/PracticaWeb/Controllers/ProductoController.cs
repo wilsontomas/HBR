@@ -15,8 +15,11 @@ namespace PracticaWeb.Controllers
         private MetodosProducto metodos = new MetodosProducto();
         public ActionResult ListarProducto()
         {
-            var ListaProductos = metodos.ObtenerProductos();
-            return View(ListaProductos);
+            var VM = new VMProductoCategoria2();
+            VM.ListaProductoCategoria= metodos.ObtenerProductos();
+            var metodosCategoria = new MetodosCategoria();
+            VM.ListaCategorias = metodosCategoria.ObtenerCategorias();
+            return View(VM);
         }
 
         public ActionResult EditarProducto(int Id)
